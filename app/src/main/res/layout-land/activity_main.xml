@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@color/amarillo">
+
+    <TableLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"></LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:background="@drawable/fondo_resultado"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="0"
+                android:textSize="@dimen/sizeTextResult" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/style_funtions"
+                android:onClick="clear"
+                android:text="AC"
+
+                />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="+/-" />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="%" />
+
+            <Button
+                style="@style/style_funtions"
+                android:layout_height="64dp"
+                android:text="/" />
+            <Button
+                style="@style/style_funtions"
+                android:text="root" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/style_funtions"
+                android:text="^2" />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="Sin" />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="cos" />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="Log" />
+            <Button
+                style="@style/style_funtions"
+                android:text="X!" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bt7"
+                style="@style/style_numbers"
+                android:onClick="scrib7"
+                android:text="7" />
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib8"
+                android:text="8" />
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib9"
+                android:text="9" />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="X" />
+            <Button
+                style="@style/style_funtions"
+                android:text="e" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib4"
+                android:text="4" />
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib5"
+                android:text="5" />
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib6"
+                android:text="6" />
+
+            <Button
+                style="@style/style_funtions"
+                android:onClick="scrib6"
+                android:text="-" />
+            <Button
+                style="@style/style_funtions"
+                android:text="rad" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib1"
+                android:text="1" />
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib2"
+                android:text="2" />
+
+            <Button
+                style="@style/style_numbers"
+                android:onClick="scrib3"
+                android:text="3" />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="+" />
+            <Button
+                style="@style/style_funtions"
+                android:text="ln" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="401dp"
+            android:layout_height="208dp">
+
+            <Button
+                style="@style/style_numbers"
+                android:layout_span="2"
+                android:onClick="scrib0"
+                android:text="0" />
+
+            <Button
+                style="@style/style_numbers"
+                android:text="." />
+
+            <Button
+                style="@style/style_funtions"
+                android:text="=" />
+            <Button
+                style="@style/style_funtions"
+                android:text="π" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:layout_span="4"
+                android:src="@drawable/logoapp" />
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>
